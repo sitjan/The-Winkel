@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
+<<<<<<< HEAD
 <!-- Written by QtCreator 6.0.2, 2022-03-06T20:26:07. -->
+=======
+<!-- Written by QtCreator 6.0.2, 2022-03-06T20:58:53. -->
+>>>>>>> ebc48c04e19c2cb8d18751ae464ee64a6a43ba81
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -247,7 +251,10 @@
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">C:/Users/Shashank/OneDrive/Desktop/qt/winkel/The-Winkel/build-untitled-Desktop_Qt_6_2_3_MinGW_64_bit-Debug</value>
+=======
+>>>>>>> ebc48c04e19c2cb8d18751ae464ee64a6a43ba81
    </valuemap>
    <value type="qlonglong" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
   </valuemap>
