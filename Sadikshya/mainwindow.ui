@@ -33,21 +33,19 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>-40</y>
-      <width>691</width>
-      <height>581</height>
+      <x>30</x>
+      <y>0</y>
+      <width>511</width>
+      <height>531</height>
      </rect>
     </property>
     <property name="text">
      <string/>
     </property>
     <property name="pixmap">
-     <pixmap>C:/Users/Lenovo/Downloads/Black and White Modern Minimalist Initials Logo (1).png</pixmap>
+     <pixmap>../pictures/Black and White Modern Minimalist Initials Logo (1).png</pixmap>
     </property>
    </widget>
-   <zorder>label</zorder>
-   <zorder>continuebutton</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
