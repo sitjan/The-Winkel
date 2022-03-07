@@ -24,6 +24,7 @@ private slots:
 private:
     Ui::customerregistration *ui;
     QSqlDatabase mydb;
+
 };
 
 #endif // CUSTOMERREGISTRATION_H
