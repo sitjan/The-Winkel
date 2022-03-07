@@ -10,7 +10,7 @@ CONFIG += c++11
 
 SOURCES += \
     admin.cpp \
-    customerregistration.cpp \
+    customerregister.cpp \
     customers.cpp \
     loginpage.cpp \
     main.cpp \
@@ -18,14 +18,14 @@ SOURCES += \
 
 HEADERS += \
     admin.h \
-    customerregistration.h \
+    customerregister.h \
     customers.h \
     loginpage.h \
     mainwindow.h
 
 FORMS += \
     admin.ui \
-    customerregistration.ui \
+    customerregister.ui \
     customers.ui \
     loginpage.ui \
     mainwindow.ui
