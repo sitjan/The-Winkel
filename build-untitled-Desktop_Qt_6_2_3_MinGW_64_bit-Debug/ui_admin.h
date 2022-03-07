@@ -73,10 +73,10 @@ public:
         inputusername->setFont(font1);
         passwordlabel = new QLabel(frame);
         passwordlabel->setObjectName(QString::fromUtf8("passwordlabel"));
-        passwordlabel->setGeometry(QRect(60, 110, 71, 20));
+        passwordlabel->setGeometry(QRect(60, 110, 91, 20));
         usernamelabel = new QLabel(frame);
         usernamelabel->setObjectName(QString::fromUtf8("usernamelabel"));
-        usernamelabel->setGeometry(QRect(60, 60, 71, 21));
+        usernamelabel->setGeometry(QRect(60, 60, 81, 21));
         checkusernamebutton = new QPushButton(frame);
         checkusernamebutton->setObjectName(QString::fromUtf8("checkusernamebutton"));
         checkusernamebutton->setGeometry(QRect(270, 60, 20, 20));

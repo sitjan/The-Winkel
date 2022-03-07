@@ -26,8 +26,8 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QPushButton *continuebutton;
     QLabel *label;
+    QPushButton *nextbutton;
     QMenuBar *menubar;
     QMenu *menuTHE_WINKEL;
     QStatusBar *statusbar;
@@ -36,23 +36,22 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(736, 547);
+        MainWindow->resize(984, 582);
         MainWindow->setAnimated(true);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        continuebutton = new QPushButton(centralwidget);
-        continuebutton->setObjectName(QString::fromUtf8("continuebutton"));
-        continuebutton->setGeometry(QRect(590, 440, 80, 24));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, -40, 691, 581));
-        label->setPixmap(QPixmap(QString::fromUtf8("C:/Users/Lenovo/Downloads/Black and White Modern Minimalist Initials Logo (1).png")));
+        label->setGeometry(QRect(0, -30, 991, 601));
+        label->setPixmap(QPixmap(QString::fromUtf8("../pictures/Black and White Modern Minimalist Initials Logo (1).png")));
+        label->setScaledContents(true);
+        nextbutton = new QPushButton(centralwidget);
+        nextbutton->setObjectName(QString::fromUtf8("nextbutton"));
+        nextbutton->setGeometry(QRect(840, 470, 83, 29));
         MainWindow->setCentralWidget(centralwidget);
-        label->raise();
-        continuebutton->raise();
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 736, 21));
+        menubar->setGeometry(QRect(0, 0, 984, 25));
         menuTHE_WINKEL = new QMenu(menubar);
         menuTHE_WINKEL->setObjectName(QString::fromUtf8("menuTHE_WINKEL"));
         MainWindow->setMenuBar(menubar);
@@ -70,8 +69,8 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
-        continuebutton->setText(QCoreApplication::translate("MainWindow", "CONTINUE", nullptr));
         label->setText(QString());
+        nextbutton->setText(QCoreApplication::translate("MainWindow", "Next", nullptr));
         menuTHE_WINKEL->setTitle(QCoreApplication::translate("MainWindow", "THE WINKEL", nullptr));
     } // retranslateUi
 

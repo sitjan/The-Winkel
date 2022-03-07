@@ -60,14 +60,14 @@ public:
         loginbutton->setGeometry(QRect(400, 190, 80, 24));
         registerbutton = new QPushButton(centralwidget);
         registerbutton->setObjectName(QString::fromUtf8("registerbutton"));
-        registerbutton->setGeometry(QRect(390, 270, 80, 24));
+        registerbutton->setGeometry(QRect(390, 270, 101, 24));
         label = new QLabel(centralwidget);
         label->setObjectName(QString::fromUtf8("label"));
         label->setGeometry(QRect(200, 270, 181, 21));
         customer->setCentralWidget(centralwidget);
         menubar = new QMenuBar(customer);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 691, 21));
+        menubar->setGeometry(QRect(0, 0, 691, 25));
         customer->setMenuBar(menubar);
         statusbar = new QStatusBar(customer);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
