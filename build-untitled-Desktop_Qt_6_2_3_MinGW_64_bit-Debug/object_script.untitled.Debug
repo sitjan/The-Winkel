@@ -1,11 +1,21 @@
 debug/admin.o
+<<<<<<< Updated upstream
 debug/customerregister.o
 debug/customers.o
+=======
+debug/customer.o
+debug/customerregistration.o
+>>>>>>> Stashed changes
 debug/loginpage.o
 debug/main.o
 debug/mainwindow.o
 debug/moc_admin.o
+<<<<<<< Updated upstream
 debug/moc_customerregister.o
 debug/moc_customers.o
+=======
+debug/moc_customer.o
+debug/moc_customerregistration.o
+>>>>>>> Stashed changes
 debug/moc_loginpage.o
 debug/moc_mainwindow.o

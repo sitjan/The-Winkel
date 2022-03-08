@@ -8,6 +8,7 @@ QMAKE_CXX.COMPILER_MACROS = \
     QMAKE_GCC_MINOR_VERSION \
     QMAKE_GCC_PATCH_VERSION
 QMAKE_CXX.INCDIRS = \
+<<<<<<< Updated upstream
     C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ \
     C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 \
     C:/Qt/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward \
@@ -19,3 +20,16 @@ QMAKE_CXX.LIBDIRS = \
     C:/Qt/Tools/mingw900_64/lib/gcc \
     C:/Qt/Tools/mingw900_64/x86_64-w64-mingw32/lib \
     C:/Qt/Tools/mingw900_64/lib
+=======
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++ \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32 \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed \
+    C:/qtinstall/Tools/mingw900_64/x86_64-w64-mingw32/include
+QMAKE_CXX.LIBDIRS = \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc/x86_64-w64-mingw32/11.2.0 \
+    C:/qtinstall/Tools/mingw900_64/lib/gcc \
+    C:/qtinstall/Tools/mingw900_64/x86_64-w64-mingw32/lib \
+    C:/qtinstall/Tools/mingw900_64/lib
+>>>>>>> Stashed changes

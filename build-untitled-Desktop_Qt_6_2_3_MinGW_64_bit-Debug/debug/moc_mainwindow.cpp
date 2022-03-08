@@ -23,18 +23,31 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     const uint offsetsAndSize[6];
+<<<<<<< Updated upstream
     char stringdata0[34];
+=======
+    char stringdata0[38];
+>>>>>>> Stashed changes
 };
 #define QT_MOC_LITERAL(ofs, len) \
     uint(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs), len 
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
 QT_MOC_LITERAL(0, 10), // "MainWindow"
+<<<<<<< Updated upstream
 QT_MOC_LITERAL(11, 21), // "on_nextbutton_clicked"
 QT_MOC_LITERAL(33, 0) // ""
 
     },
     "MainWindow\0on_nextbutton_clicked\0"
+=======
+QT_MOC_LITERAL(11, 25), // "on_continuebutton_clicked"
+QT_MOC_LITERAL(37, 0) // ""
+
+    },
+    "MainWindow\0on_continuebutton_clicked\0"
+    ""
+>>>>>>> Stashed changes
 };
 #undef QT_MOC_LITERAL
 
@@ -66,7 +79,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
+<<<<<<< Updated upstream
         case 0: _t->on_nextbutton_clicked(); break;
+=======
+        case 0: _t->on_continuebutton_clicked(); break;
+>>>>>>> Stashed changes
         default: ;
         }
     }

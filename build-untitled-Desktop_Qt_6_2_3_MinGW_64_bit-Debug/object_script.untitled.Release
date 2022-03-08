@@ -1,11 +1,21 @@
 release/admin.o
+<<<<<<< Updated upstream
 release/customerregister.o
 release/customers.o
+=======
+release/customer.o
+release/customerregistration.o
+>>>>>>> Stashed changes
 release/loginpage.o
 release/main.o
 release/mainwindow.o
 release/moc_admin.o
+<<<<<<< Updated upstream
 release/moc_customerregister.o
 release/moc_customers.o
+=======
+release/moc_customer.o
+release/moc_customerregistration.o
+>>>>>>> Stashed changes
 release/moc_loginpage.o
 release/moc_mainwindow.o
