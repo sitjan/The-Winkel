@@ -6,73 +6,113 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>964</width>
-    <height>427</height>
+    <width>1366</width>
+    <height>768</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>Login </string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>350</x>
-     <y>110</y>
-     <width>311</width>
-     <height>41</height>
+     <x>60</x>
+     <y>20</y>
+     <width>241</width>
+     <height>71</height>
     </rect>
    </property>
    <property name="font">
     <font>
-     <pointsize>15</pointsize>
+     <pointsize>48</pointsize>
     </font>
    </property>
    <property name="text">
-    <string>WELCOME TO THE WINKEL</string>
+    <string>LOGIN</string>
    </property>
   </widget>
-  <widget class="QLabel" name="label_2">
+  <widget class="QLabel" name="background">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>170</y>
-     <width>211</width>
-     <height>221</height>
+     <x>0</x>
+     <y>-3</y>
+     <width>1366</width>
+     <height>791</height>
     </rect>
+   </property>
+   <property name="autoFillBackground">
+    <bool>true</bool>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>../pictures/images.png</pixmap>
+    <pixmap>../pictures/logotextonly.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButtonadmin">
+  <widget class="QCommandLinkButton" name="commandLinkButton">
    <property name="geometry">
     <rect>
-     <x>270</x>
-     <y>260</y>
-     <width>83</width>
-     <height>29</height>
+     <x>600</x>
+     <y>130</y>
+     <width>924</width>
+     <height>80</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>Admin</string>
+    <string>Login as a Customer </string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../pictures/153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png</normaloff>../pictures/153-1538896_community-icon-transparent-background-png-download-transparent-transparent.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
    </property>
   </widget>
-  <widget class="QPushButton" name="pushButton_custpmer">
+  <widget class="QCommandLinkButton" name="commandLinkButton_2">
    <property name="geometry">
     <rect>
-     <x>580</x>
-     <y>260</y>
-     <width>83</width>
-     <height>29</height>
+     <x>60</x>
+     <y>120</y>
+     <width>498</width>
+     <height>80</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>26</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>Customer</string>
+    <string>Login as an Administrator</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../pictures/556-5569894_admin-admin-vector-icon-png-transparent-png.jpg</normaloff>../pictures/556-5569894_admin-admin-vector-icon-png-transparent-png.jpg</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>60</width>
+     <height>60</height>
+    </size>
    </property>
   </widget>
+  <zorder>background</zorder>
+  <zorder>commandLinkButton_2</zorder>
+  <zorder>commandLinkButton</zorder>
+  <zorder>label</zorder>
  </widget>
  <resources/>
  <connections/>

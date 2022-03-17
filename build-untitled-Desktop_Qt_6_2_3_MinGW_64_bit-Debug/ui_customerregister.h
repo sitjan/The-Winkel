@@ -138,7 +138,7 @@ public:
 
     void retranslateUi(QDialog *customerregister)
     {
-        customerregister->setWindowTitle(QCoreApplication::translate("customerregister", "Dialog", nullptr));
+        customerregister->setWindowTitle(QCoreApplication::translate("customerregister", "Customer Register", nullptr));
         groupBox->setTitle(QCoreApplication::translate("customerregister", "Welcome to customer registration page", nullptr));
         label->setText(QCoreApplication::translate("customerregister", "NAME", nullptr));
         label_2->setText(QCoreApplication::translate("customerregister", "CONTACT", nullptr));

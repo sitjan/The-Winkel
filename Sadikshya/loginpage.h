@@ -18,9 +18,9 @@ public:
 
 private slots:
 
-    void on_pushButtonadmin_clicked();
+    void on_commandLinkButton_2_clicked();
 
-    void on_pushButton_custpmer_clicked();
+    void on_commandLinkButton_clicked();
 
 private:
     Ui::loginpage *ui;

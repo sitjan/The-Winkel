@@ -15,11 +15,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_nextbutton_clicked()
+
+
+
+void MainWindow::on_Login_clicked()
 {
     hide();
     loginpage Login;
     Login.setModal(true);
     Login.exec();
+
 }
 

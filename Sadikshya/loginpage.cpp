@@ -15,7 +15,10 @@ loginpage::~loginpage()
     delete ui;
 }
 
-void loginpage::on_pushButtonadmin_clicked()
+
+
+
+void loginpage::on_commandLinkButton_2_clicked()
 {
     admin adlogin;
     adlogin.setModal(true);
@@ -23,8 +26,7 @@ void loginpage::on_pushButtonadmin_clicked()
 }
 
 
-
-void loginpage::on_pushButton_custpmer_clicked()
+void loginpage::on_commandLinkButton_clicked()
 {
     customers culogin;
     culogin.setModal(true);

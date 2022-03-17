@@ -10,9 +10,9 @@
 #define UI_ADMIN_H
 
 #include <QtCore/QVariant>
+#include <QtGui/QIcon>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QFrame>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
@@ -23,75 +23,83 @@ class Ui_admin
 {
 public:
     QLabel *msglabel;
-    QFrame *frame;
-    QLabel *label;
+    QLabel *background;
+    QLabel *passwordlabel;
     QLineEdit *inputpassword;
     QLineEdit *inputusername;
-    QLabel *passwordlabel;
     QLabel *usernamelabel;
     QPushButton *checkusernamebutton;
     QPushButton *loginbutton;
+    QLabel *label;
 
     void setupUi(QDialog *admin)
     {
         if (admin->objectName().isEmpty())
             admin->setObjectName(QString::fromUtf8("admin"));
-        admin->resize(567, 289);
+        admin->resize(670, 748);
+        QIcon icon;
+        icon.addFile(QString::fromUtf8("../pictures/minilogo_g9m_icon.ico"), QSize(), QIcon::Normal, QIcon::Off);
+        admin->setWindowIcon(icon);
         msglabel = new QLabel(admin);
         msglabel->setObjectName(QString::fromUtf8("msglabel"));
-        msglabel->setGeometry(QRect(20, 250, 281, 16));
-        frame = new QFrame(admin);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(100, 30, 351, 191));
+        msglabel->setGeometry(QRect(300, 310, 351, 41));
         QFont font;
-        font.setPointSize(9);
-        font.setBold(true);
-        frame->setFont(font);
-        frame->setAutoFillBackground(false);
-        frame->setFrameShape(QFrame::Panel);
-        frame->setFrameShadow(QFrame::Raised);
-        frame->setLineWidth(43);
-        frame->setMidLineWidth(0);
-        label = new QLabel(frame);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(0, 0, 51, 31));
-        label->setFrameShape(QFrame::WinPanel);
-        label->setFrameShadow(QFrame::Raised);
-        label->setLineWidth(12);
-        label->setTextFormat(Qt::AutoText);
-        inputpassword = new QLineEdit(frame);
-        inputpassword->setObjectName(QString::fromUtf8("inputpassword"));
-        inputpassword->setGeometry(QRect(170, 110, 121, 24));
-        QFont font1;
-        font1.setPointSize(9);
-        font1.setBold(false);
-        inputpassword->setFont(font1);
-        inputpassword->setEchoMode(QLineEdit::Password);
-        inputusername = new QLineEdit(frame);
-        inputusername->setObjectName(QString::fromUtf8("inputusername"));
-        inputusername->setGeometry(QRect(170, 60, 121, 24));
-        inputusername->setFont(font1);
-        passwordlabel = new QLabel(frame);
+        font.setFamilies({QString::fromUtf8("Audiowide")});
+        font.setPointSize(11);
+        msglabel->setFont(font);
+        background = new QLabel(admin);
+        background->setObjectName(QString::fromUtf8("background"));
+        background->setGeometry(QRect(0, 0, 670, 748));
+        background->setPixmap(QPixmap(QString::fromUtf8("../pictures/adminloginpagebck.jpg")));
+        background->setScaledContents(true);
+        passwordlabel = new QLabel(admin);
         passwordlabel->setObjectName(QString::fromUtf8("passwordlabel"));
-        passwordlabel->setGeometry(QRect(60, 110, 91, 20));
-        usernamelabel = new QLabel(frame);
+        passwordlabel->setGeometry(QRect(370, 420, 171, 21));
+        QFont font1;
+        font1.setPointSize(18);
+        passwordlabel->setFont(font1);
+        inputpassword = new QLineEdit(admin);
+        inputpassword->setObjectName(QString::fromUtf8("inputpassword"));
+        inputpassword->setGeometry(QRect(330, 470, 251, 41));
+        QFont font2;
+        font2.setPointSize(18);
+        font2.setBold(false);
+        inputpassword->setFont(font2);
+        inputpassword->setEchoMode(QLineEdit::Password);
+        inputusername = new QLineEdit(admin);
+        inputusername->setObjectName(QString::fromUtf8("inputusername"));
+        inputusername->setGeometry(QRect(320, 200, 251, 41));
+        inputusername->setFont(font1);
+        usernamelabel = new QLabel(admin);
         usernamelabel->setObjectName(QString::fromUtf8("usernamelabel"));
-        usernamelabel->setGeometry(QRect(60, 60, 81, 21));
-        checkusernamebutton = new QPushButton(frame);
+        usernamelabel->setGeometry(QRect(380, 160, 121, 21));
+        usernamelabel->setFont(font1);
+        checkusernamebutton = new QPushButton(admin);
         checkusernamebutton->setObjectName(QString::fromUtf8("checkusernamebutton"));
-        checkusernamebutton->setGeometry(QRect(270, 60, 20, 20));
-        loginbutton = new QPushButton(frame);
+        checkusernamebutton->setGeometry(QRect(600, 240, 41, 41));
+        loginbutton = new QPushButton(admin);
         loginbutton->setObjectName(QString::fromUtf8("loginbutton"));
-        loginbutton->setGeometry(QRect(250, 153, 91, 31));
-        checkusernamebutton->raise();
-        label->raise();
+        loginbutton->setGeometry(QRect(330, 540, 251, 41));
+        loginbutton->setFont(font2);
+        label = new QLabel(admin);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(300, 260, 291, 20));
+        QFont font3;
+        font3.setFamilies({QString::fromUtf8("Audiowide")});
+        font3.setPointSize(14);
+        label->setFont(font3);
+        background->raise();
+        msglabel->raise();
+        passwordlabel->raise();
         inputpassword->raise();
         inputusername->raise();
-        passwordlabel->raise();
         usernamelabel->raise();
+        checkusernamebutton->raise();
         loginbutton->raise();
-        frame->raise();
-        msglabel->raise();
+        label->raise();
+        QWidget::setTabOrder(inputusername, inputpassword);
+        QWidget::setTabOrder(inputpassword, loginbutton);
+        QWidget::setTabOrder(loginbutton, checkusernamebutton);
 
         retranslateUi(admin);
 
@@ -100,13 +108,14 @@ public:
 
     void retranslateUi(QDialog *admin)
     {
-        admin->setWindowTitle(QCoreApplication::translate("admin", "Dialog", nullptr));
+        admin->setWindowTitle(QCoreApplication::translate("admin", "THE WINKEL- Administrator Login", nullptr));
         msglabel->setText(QString());
-        label->setText(QCoreApplication::translate("admin", "Log in", nullptr));
+        background->setText(QString());
         passwordlabel->setText(QCoreApplication::translate("admin", "PASSWORD", nullptr));
-        usernamelabel->setText(QCoreApplication::translate("admin", "USERNAME", nullptr));
+        usernamelabel->setText(QCoreApplication::translate("admin", "USER ID", nullptr));
         checkusernamebutton->setText(QString());
-        loginbutton->setText(QCoreApplication::translate("admin", "LOGIN", nullptr));
+        loginbutton->setText(QCoreApplication::translate("admin", "AUTHENTICATE", nullptr));
+        label->setText(QCoreApplication::translate("admin", "Click here to verify User ID", nullptr));
     } // retranslateUi
 
 };

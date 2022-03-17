@@ -10,7 +10,7 @@ customers::customers(QWidget *parent) :
 {
     ui->setupUi(this);
     mydb =QSqlDatabase :: addDatabase("QSQLITE");
-    mydb.setDatabaseName("C:/Users/Shashank/OneDrive/Desktop/qt/winkel/The-Winkel/database/customer.db");
+    mydb.setDatabaseName("C:/Users/hp/Desktop/new project/The-Winkel/database/customer.db");
     if (mydb.open())
     {
         qDebug()<<"opened\n";
